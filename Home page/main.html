@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script
+    src="https://kit.fontawesome.com/e6c81cd05f.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- CSS only -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="style.css" />
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <!-- google font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=DM Mono"
+    rel="stylesheet"
+  />
+  <body id="body" class="light-mode">
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-space-shuttle"></i>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Projects</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          Freelance status:&nbsp;
+          <span class="badge badge-success">
+            <i class="fas fa-briefcase"></i> Available for work
+          </span>
+        </form>
+      </div>
+    </nav>
+
+    <!-- about section -->
+
+    <button
+      type="button"
+      name="dark_light"
+      onclick="toggleDarkLight()"
+      title="Toggle
+      dark/light mode"
+    >
+      🌛
+    </button>
+
+    <!-- Content -->
+
+    <div class="mx-auto schedule" style="max-width: 100%; max-height: 500px;">
+      <div class="row mx-auto mb-5">
+        <div class="col-lg-5">
+          <img
+            src="https://pbs.twimg.com/profile_images/1271054426476703745/XefrueXE_400x400.jpg"
+            class="rounded img"
+            alt="..."
+          />
+        </div>
+        <div class="col-lg-5">
+          <div class="mb-5 mt-5">
+            <h5>Frontend Dev</h5>
+            <p class="card-text">
+              I'm a self taught web developer from India. I'm currently learning
+              about HTML ,CSS and Javascript.
+            </p>
+
+            <p class="card-text">
+              <small class="text-muted">
+                Freelance status:&nbsp;
+                <span class="badge badge-success">
+                  <i class="fas fa-briefcase"></i> Available for work
+                </span>
+              </small>
+            </p>
+          </div>
+
+          <a class="btn btn-primary btn-wide transition-3d-hover" href="#"
+            >Resume</a
+          >
+          <a class="btn btn-link btn-wide" href="#"
+            >Read More <i class="fas fa-angle-right fa-sm ml-1"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- recent work -->
+
+    <h2 class="ml-5" style="max-width: 60%;">Recent work</h2>
+    <div
+      class="row row-cols-1 row-cols-md-3 mx-auto mb-5"
+      style="max-width: 80%;"
+    >
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1595878830509-58b6ae9d81f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+              at officia et reiciendis soluta aperiam?.
+            </p>
+            <span class="badge badge-success">HTML</span>
+            <span class="badge badge-success">CSS</span>
+            <span class="badge badge-success">JAVASCRIPT</span>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1595878830509-58b6ae9d81f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            <span class="badge badge-success">HTML</span>
+            <span class="badge badge-success">CSS</span>
+            <span class="badge badge-success">JAVASCRIPT</span>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1595878830509-58b6ae9d81f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              nemo.
+            </p>
+
+            <span class="badge badge-success">HTML</span>
+            <span class="badge badge-success">CSS</span>
+            <span class="badge badge-success">JAVASCRIPT</span>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1595878830509-58b6ae9d81f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              natus officia, aliquam laboriosam et qui!
+            </p>
+
+            <span class="badge badge-success">HTML</span>
+            <span class="badge badge-success">CSS</span>
+            <span class="badge badge-success">JAVASCRIPT</span>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1595912587923-bdffd4564f33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vel
+              porro vero modi distinctio aliquid sint mollitia numquam, velit
+              assumenda.
+            </p>
+
+            <span class="badge badge-success">HTML</span>
+            <span class="badge badge-success">CSS</span>
+            <span class="badge badge-success">JAVASCRIPT</span>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1595912587923-bdffd4564f33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              a perspiciatis dolorum autem alias?
+            </p>
+
+            <span class="badge badge-success">HTML</span>
+            <span class="badge badge-success">CSS</span>
+            <span class="badge badge-success">JAVASCRIPT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- skills -->
+    <h2 class="ml-5" style="max-width: 60%;">Skills</h2>
+    <ul
+      class="list-group list-group-horizontal-lg list-group-flush mx-auto px-5 mb-5"
+      style="max-width: 80%;"
+    >
+      <li class="list-group-item" href="" title="HTML5">
+        <i class="fab fa-html5 fa-2x" aria-hidden="true"></i><br />
+        HTML5
+      </li>
+      <li class="list-group-item" href="" title="CSS3">
+        <i class="fab fa-css3-alt fa-2x" aria-hidden="true"></i>
+        <br />CSS3
+      </li>
+
+      <li class="list-group-item" href="" title="Javascript">
+        <i class="fab fa-js-square fa-2x" aria-hidden="true"></i
+        ><br />Javascript
+      </li>
+      <li class="list-group-item" href="" title="GitHub">
+        <i class="fab fa-github-square fa-2x" aria-hidden="true"></i
+        ><br />GitHub
+      </li>
+      <li class="list-group-item" href="" title="BootStrap">
+        <i class="fab fa-bootstrap fa-2x" aria-hidden="true"></i>
+        <br />BootStrap
+      </li>
+      <li class="list-group-item" href="" title="Sass">
+        <i class="fab fa-sass fa-2x" aria-hidden="true"></i><br />Sass
+      </li>
+    </ul>
+    <!-- about -->
+    <h2 class="ml-5" style="max-width: 60%;">About ME</h2>
+    <div class="card mx-auto mb-5" style="max-width: 80%;">
+      <h5 class="card-header">Hello !</h5>
+      <div class="card-body">
+        <p class="card-text px-2">
+          I am Vipansh Thakur, a freelance Front-End Developer.I am currently
+          learning HTMl CSS and Javascript. If you have questions, suggestions,
+          think we could work together, or just want to say hi, don't hesitate
+          to
+          <a href="#" class="btn btn-outline-success">Contact Me</a>
+        </p>
+        <p class="card-text mx-auto" style="max-width: 50%;">
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+            <span class="text-muted">Instagram </span></a
+          >
+          <br />
+          <a href="#"
+            ><i class="fa fa-twitter"></i>
+            <span class="text-muted">Twitter </span></a
+          >
+          <br />
+          <a href="#"
+            ><i class="fa fa-facebook"></i>
+            <span class="text-muted">Facebook </span></a
+          >
+          <br />
+          <a href="#"
+            ><i class="fa fa-github"></i>
+            <span class="text-muted">Github </span></a
+          ><br />
+          <a href="#"
+            ><i class="fa fa-linkedin"></i>
+            <span class="text-muted">Linkedine </span></a
+          >
+          <br />
+        </p>
+      </div>
+    </div>
+    <!-- contact -->
+    <h2 class="ml-5" style="max-width: 60%;">Contact</h2>
+    <div class="container cont mx-auto mb-5">
+      <div class="card mx-auto" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Vipansh Thakur</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Address</h6>
+          <p class="card-text">
+            Dharamshala India
+            <a href="#" class="card-link">Vipanshthakur@gmail.com</a>
+            <a href="#" class="card-link">8894968567</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card-body mx-auto schedule" style="width: 4rem;">
+        <h5 class="card-title">Schedules</h5>
+        <p class="card-text">Monday - Friday</p>
+        <span class=""> 10AM - 7PM</span>
+      </div>
+      <br /><br />
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" />
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Email" />
+          </div>
+        </div>
+        <br />
+        <input
+          class="form-control form-control-lg"
+          type="text"
+          placeholder="Message"
+        />
+        <br />
+        <button type="button" class="btn btn-success">Send</button>
+      </form>
+    </div>
+
+    <!-- bottom line -->
+    <div class="mx-auto schedule">
+      Made with love by Vipansh <br />
+      All Rights Reserved 2020, Vipansh, IN
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
