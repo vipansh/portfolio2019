@@ -1,0 +1,86 @@
+.cont {
+  margin-bottom: -15px;
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body {
+  font-family: "DM Mono";
+}
+.schedule {
+  text-align: center;
+}
+
+.fa:hover {
+  color: blue;
+}
+.fa {
+  color: green;
+}
+.fas {
+  color: green;
+}
+
+body.dark-mode {
+  background-color: black;
+}
+
+body.light-mode {
+  background-color: white;
+}
+body.dark-mode h2 {
+  color: white;
+}
+body.dark-mode .schedule {
+  color: white;
+}
+
+.footer {
+  display: inline-block;
+
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  height: 300px;
+  background-image: linear-gradient(#ff9d2f, #ff6126);
+}
+
+h1 {
+  padding: 100px 0;
+  font: 44px "Arial";
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+@media (max-width: 699px) {
+  .svg--lg {
+    display: none;
+  }
+  body {
+    font-size: 0.8em;
+  }
+  .img {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media (min-width: 700px) {
+  .svg--sm {
+    display: none;
+  }
+}
