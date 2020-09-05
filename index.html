@@ -40,7 +40,7 @@
 
   <!-- google font -->
   <link
-    href="https://fonts.googleapis.com/css?family=DM Mono"
+    href="https://fonts.googleapis.com/css?family=Karma"
     rel="stylesheet"
   />
   <body id="body" class="light-mode">
@@ -199,21 +199,20 @@
       </div>
       <div class="col mb-4">
         <div class="card h-100">
+          <a href="https://vipansh.github.io/four-card-feature-section-master/">
           <img
-            src="https://images.unsplash.com/photo-1595878830509-58b6ae9d81f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            src="https://repository-images.githubusercontent.com/290788938/1b656100-e8a8-11ea-8419-7cd24b9b8572"
             class="card-img-top"
             alt="..."
-          />
+          /></a>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Four-card-feature-section-master</h5>
             <p class="card-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              nemo.
+              Challenge is to build out this feature section and View the optimal layout for the site depending on their device's screen size
             </p>
 
             <span class="badge badge-success">HTML</span>
             <span class="badge badge-success">CSS</span>
-            <span class="badge badge-success">JAVASCRIPT</span>
           </div>
         </div>
       </div>
@@ -375,20 +374,20 @@
       <form>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="First name" />
+            <input type="text" class="form-control" id="name" placeholder="First name" />
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Email" />
+            <input type="text" id="email" class="form-control" placeholder="Email" />
           </div>
         </div>
         <br />
         <input
           class="form-control form-control-lg"
-          type="text"
+          type="text" id="message"
           placeholder="Message"
         />
         <br />
-        <button type="button" class="btn btn-success">Send</button>
+        <button type="button" class="btn btn-success" id="send" onclick="sendMessage()">Send</button>
       </form>
     </div>
 
